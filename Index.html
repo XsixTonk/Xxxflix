@@ -79,41 +79,45 @@
             </div>
             </div>
             <script>
-                $(document).ready(function() {
-                    // Set interval for automatic sliding
-                    var slideInterval = setInterval(nextSlide, 3000); // Change the interval duration as needed (in milliseconds)
-            
-                    // Function to switch to the next slide
-                    function nextSlide() {
-                        var currentSlide = $('.slide.active');
-                        var nextSlide = currentSlide.next();
-            
-                        // Check if next slide exists within the first set of slides, if not, go to the second set
-                        if (nextSlide.length === 0) {
-                            nextSlide = $('.card-slides-1 .slide').first();
-                        }
-            
-                        // Check if next slide exists within the second set of slides, if not, go back to the first set
-                        if (nextSlide.length === 0) {
-                            nextSlide = $('.card-slides .slide').first();
-                        }
-            
-                        // Switch active class
-                        $('.slide').removeClass('active');
-                        nextSlide.addClass('active');
-                    }
-            
-                    // Stop automatic sliding on hover
-                    $('.card-slides').hover(
-                        function() {
-                            clearInterval(slideInterval);
-                        },
-                        function() {
-                            slideInterval = setInterval(nextSlide, 3000); // Restart sliding after mouseout
-                        }
-                    );
-                });
-            </script>
+$(document).ready(function() {
+        // Set interval for automatic sliding
+        var slideInterval = setInterval(nextSlide, 3000); // Change the interval duration as needed (in milliseconds)
+
+        // Function to switch to the next slide
+        function nextSlide() {
+            var currentSlide = $('.slide.active');
+            var nextSlide = currentSlide.next();
+
+            // Check if next slide exists within the first set of slides, if not, go to the second set
+            if (nextSlide.length === 0) {
+                nextSlide = $('.card-slides-1 .slide').first();
+                $('.card-slides').hide(); // Hide the first set of slides
+                $('.card-slides-1').show(); // Show the second set of slides
+            }
+
+            // Check if next slide exists within the second set of slides, if not, go back to the first set
+            if (nextSlide.length === 0) {
+                nextSlide = $('.card-slides .slide').first();
+                $('.card-slides').show(); // Show the first set of slides
+                $('.card-slides-1').hide(); // Hide the second set of slides
+            }
+
+            // Switch active class
+            $('.slide').removeClass('active');
+            nextSlide.addClass('active');
+        }
+
+        // Stop automatic sliding on hover
+        $('.card-slides').hover(
+            function() {
+                clearInterval(slideInterval);
+            },
+            function() {
+                slideInterval = setInterval(nextSlide, 3000); // Restart sliding after mouseout
+            }
+        );
+    });
+</script>
             
         </section>
         <section id="About">
