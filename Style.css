@@ -103,17 +103,11 @@ main{
 }
 
 .card-slides-1 {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Equal width columns */
-    padding: 10px;
-    grid-gap: 5px;
-    display: hidden;
+    display: none; /* Hide the second set of slides */
 }
 
 .slide img {
-    width:  190; /* Set each slide to take full width of its parent */
+    width: 190px; /* Set width of each slide to 190px */
     height: 250px; /* Set height of each slide to 250px */
     overflow: hidden; /* Hide overflow to ensure only 5 columns are visible */
 }
