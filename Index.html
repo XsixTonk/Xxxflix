@@ -79,7 +79,10 @@
                 </div>
             </div>
             <script>
-$(document).ready(function() {
+          $(document).ready(function() {
+        // Initially hide the second set of slides
+        $('.card-slides-1').hide();
+
         // Set interval for automatic sliding
         var slideInterval = setInterval(nextSlide, 3000); // Change the interval duration as needed (in milliseconds)
 
@@ -98,8 +101,8 @@ $(document).ready(function() {
             // Check if next slide exists within the second set of slides, if not, go back to the first set
             if (nextSlide.length === 0) {
                 nextSlide = $('.card-slides .slide').first();
-                $('.card-slides').show(); // Show the first set of slides
                 $('.card-slides-1').hide(); // Hide the second set of slides
+                $('.card-slides').show(); // Show the first set of slides
             }
 
             // Switch active class
@@ -117,8 +120,7 @@ $(document).ready(function() {
             }
         );
     });
-</script>
-            
+        </script>     
         </section>
         <section id="About">
             <div class="About-us">
