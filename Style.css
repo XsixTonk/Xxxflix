@@ -144,7 +144,21 @@ main{
         width:190px
         height:250px;
     }
-   
+   #vids-ads-place{width:100%;
+                   height:auto;
+                  }
+#vids-ad{width:100%;
+         display:grid;
+         grid-template-column:repeat(5,1fr);
+         height:auto;
+         padding:5px;
+        }
+#vid-ad{display:flex;
+        flex-direction:row;
+        width:190px
+        height:250px;
+       }
+    
    
 @media screen (min-width:280px) and (max-width:914px){
 
@@ -273,7 +287,7 @@ main{
             }
 #videos-place{
     display:grid;
-    grid-template-column:repeat(5,1fr);
+    grid-template-column:repeat(2,1fr);
     width:100%;
     height:auto;
 }
@@ -282,8 +296,23 @@ main{
     .video-card {
         display:flex;
         flex-direction:row;
+        width:150px
+        height:250px;
+        border:2px solid black;
+    }
+   #vids-ads-place{width:100%;
+                   height:auto;
+                  }
+#vids-ad{width:100%;
+         display:grid;
+         grid-template-column:repeat(3,1fr);
+         height:auto;
+         padding:5px;
+        }
+#vid-ad{display:flex;
+        flex-direction:row;
         width:190px
         height:250px;
-    }
-       
+       }
+    
 }
