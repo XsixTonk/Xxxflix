@@ -122,12 +122,12 @@ main{
     height: auto;
     padding: 10px;
 }
-#videos-sect{width:100%;
+#video-sect{width:100%;
              height:auto;
             }
 #videos-place{
     display:grid;
-    grid-template-column:repeat(5,1fr)
+    grid-template-column:repeat(5,1fr);
     width:100%;
     height:auto;
 }
@@ -284,12 +284,12 @@ main{
     height: auto;
     padding: 10px;
 }
-    #videos-sect{width:100%;
+    #video-sect{width:100%;
              height:auto;
             }
 #videos-place{
     display:grid;
-    grid-template-column:repeat(5,1fr)
+    grid-template-column:repeat(5,1fr);
     width:100%;
     height:auto;
 }
