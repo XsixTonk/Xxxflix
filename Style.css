@@ -111,6 +111,11 @@ main{
     height: 250px; /* Set height of each slide to 250px */
     overflow: hidden; /* Hide overflow to ensure only 5 columns are visible */
 }
+#slide img {
+    width: 190px; /* Set width of each slide to 190px */
+    height: 250px; /* Set height of each slide to 250px */
+    overflow: hidden; /* Hide overflow to ensure only 5 columns are visible */
+}
 
 #About{
     width: 100%;
