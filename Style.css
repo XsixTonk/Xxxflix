@@ -147,7 +147,7 @@ main{
    #vids-ads-place{width:100%;
                    height:auto;
                   }
-#vids-ad{width:100%;
+#vids-ads{width:100%;
          display:grid;
          grid-template-column:repeat(5,1fr);
          height:auto;
@@ -254,14 +254,14 @@ main{
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Equal width columns */
+    grid-template-columns: repeat(3, 1fr); /* Equal width columns */
     padding: 10px;
     grid-gap: 5px;
 }
 
 .card-slides-1 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Equal width columns */
+    grid-template-columns: repeat(3, 1fr); /* Equal width columns */
     padding: 10px;
     grid-gap: 5px;
 }
@@ -303,7 +303,7 @@ main{
    #vids-ads-place{width:100%;
                    height:auto;
                   }
-#vids-ad{width:100%;
+#vids-ads{width:100%;
          display:grid;
          grid-template-column:repeat(3,1fr);
          height:auto;
