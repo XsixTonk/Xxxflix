@@ -221,7 +221,10 @@ main{
 }
 
 .card-slides-1 {
-    display: none; /* Hide the second set of slides */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Equal width columns */
+    padding: 10px;
+    grid-gap: 5px;
 }
 
 .slide img {
