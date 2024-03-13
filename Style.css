@@ -128,7 +128,7 @@ main{
     height: auto;
     padding: 10px;
 }
-#Ads-place{width:100%;
+
 #Ads-place {
     width: 100%;
     height: auto;
@@ -148,12 +148,12 @@ main{
 
 #videos-place {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     width: 100%;
     height: auto;
 }
 
-.video-card {
+.video-card iframe{
     display: flex;
     flex-direction: row;
     width: 190px;
@@ -308,7 +308,7 @@ main{
     height: auto;
     padding: 10px;
 }
-    #video-sect{width:100%;
+    #videos-sect{width:100%;
              height:auto;
             }
 #videos-place{
@@ -319,7 +319,7 @@ main{
 }
     
     /* Style for video container */
-    .video-card {
+    .video-card iframe{
         display:flex;
         flex-direction:row;
         width:150px
