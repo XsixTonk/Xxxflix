@@ -161,28 +161,31 @@ main{
 }
 
 #vids-ads-place {
-            width: 100%;
-            height: auto;
-        }
+    width: 100%;
+    height: auto;
+}
 
-        #vids-ads {
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-gap: 10px; /* Add some gap between grid items for clarity */
-            padding: 5px;
-        }
+#vids-ads {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px; /* Add some gap between grid items for clarity */
+    padding: 5px;
+}
 
-        .vid-ad {
-            width: 190px;
-            height: 250px;
-            border: 2px solid black; /* Add a border for visibility */
-        }
+.vid-ad {
+    width: 100%;
+    height: 250px; /* Set a fixed height for consistency */
+    border: 2px solid black; /* Add a border for visibility */
+    overflow: hidden; /* Ensure content within the div doesn't overflow */
+}
 
-        .vid-ad iframe {
-            width: 100%;
-            height: 100%;
-   
+.vid-ad iframe {
+    width: 100%;
+    height: 100%; /* Ensure the iframe fills the container */
+    border: none; /* Remove border from the iframe */
+}
+
 @media screen (min-width:280px) and (max-width:914px){
 
     .logo img {
@@ -324,27 +327,31 @@ main{
         border:2px solid black;
     }
    #vids-ads-place {
-            width: 100%;
-            height: auto;
-        }
+    width: 100%;
+    height: auto;
+}
 
-        #vids-ads {
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px; /* Add some gap between grid items for clarity */
-            padding: 5px;
-        }
+#vids-ads {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; /* Add some gap between grid items for clarity */
+    padding: 5px;
+}
 
-        .vid-ad {
-            width: 190px;
-            height: 250px;
-            border: 2px solid black; /* Add a border for visibility */
-        }
+.vid-ad {
+    width: 100%;
+    height: 250px; /* Set a fixed height for consistency */
+    border: 2px solid black; /* Add a border for visibility */
+    overflow: hidden; /* Ensure content within the div doesn't overflow */
+}
 
-        .vid-ad iframe {
-            width: 100%;
-            height: 100%;
+.vid-ad iframe {
+    width: 100%;
+    height: 100%; /* Ensure the iframe fills the container */
+    border: none; /* Remove border from the iframe */
+}
+
     #Ads-place{width:100%;
              height:auto;
     
