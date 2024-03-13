@@ -129,47 +129,57 @@ main{
     padding: 10px;
 }
 #Ads-place{width:100%;
-             height:auto;
-    
-}
-#Ad{
-    display:grid;
-    grid-template-column:repeat(5,1fr);
-    width:100%;
-    height:auto;
+#Ads-place {
+    width: 100%;
+    height: auto;
 }
 
-#video-sect{width:100%;
-             height:auto;
-            }
-#videos-place{
-    display:grid;
-    grid-template-column:repeat(5,1fr);
-    width:100%;
-    height:auto;
+#Ad {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    height: auto;
 }
-    
-    .video-card {
-        display:flex;
-        flex-direction:row;
-        width:190px
-        height:250px;
-    }
-   #vids-ads-place{width:100%;
-                   height:auto;
-                  }
-#vids-ads{width:100%;
-         display:grid;
-         grid-template-column:repeat(5,1fr);
-         height:auto;
-         padding:5px;
-        }
-#vid-ad{display:flex;
-        flex-direction:row;
-        width:190px
-        height:250px;
-       }
-    
+
+#video-sect {
+    width: 100%;
+    height: auto;
+}
+
+#videos-place {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    height: auto;
+}
+
+.video-card {
+    display: flex;
+    flex-direction: row;
+    width: 190px;
+    height: 250px;
+}
+
+#vids-ads-place {
+    width: 100%;
+    height: auto;
+}
+
+#vids-ads {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: auto;
+    padding: 5px;
+}
+
+#vid-ad {
+    display: flex;
+    flex-direction: row;
+    width: 190px;
+    height: 250px;
+}
+
    
 @media screen (min-width:280px) and (max-width:914px){
 
