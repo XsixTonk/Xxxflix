@@ -1,4 +1,4 @@
-/* Reset styles */
+0/* Reset styles */
 * {
     margin: 0;
     padding: 0;
@@ -151,6 +151,8 @@ main{
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
     height: auto;
+    margin: 5px;
+    grid-gap:10px
 }
 
 .video-card iframe{
@@ -317,13 +319,14 @@ main{
     width:100%;
     height:auto;
     padding:5px;
+    margin: 5px;
+    grid-gap:10px
 }
     
     /* Style for video container */
     .video-card iframe{
         display:flex;
-        flex-direction:row;
-        width:150px;
+        width: 350px;
         height:250px;
         border:2px solid black;
     }
