@@ -315,36 +315,34 @@ main{
     padding: 10px;
 }
     #videos-sect {
-        width: 100%;
-        height: auto;
-    }
+                width: 100% !important;
+                height: auto !important;
+            }
 
-    #videos-place {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        width: 100%;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        grid-gap: 0;
-        justify-items: center; /* Center content horizontally */
-    }
+            #videos-place {
+                display: grid !important;
+                grid-template-columns: repeat(auto-fit, minmax(calc(280px - 20px), 1fr)) !important;
+                width: 100% !important;
+                height: auto !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                grid-gap: 20px !important;
+            }
 
-    /* Style for video container */
-    .video-card {
-        width: calc(100% - 2px); /* Adjusted width to consider border */
-        height: auto;
-        border: 1px solid black;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        display: flex; /* Added to center iframe vertically */
-        justify-content: center; /* Center content horizontally */
-        align-items: center; /* Center content vertically */
-    }
+            .video-card {
+                width: 100% !important;
+                height: auto !important;
+                border: 1px solid black !important;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+            }
 
-    .video-iframe {
-        max-width: 100%; /* Video iframe takes full width of its container */
-        max-height: 100%; /* Video iframe takes full height of its container */
-    }
+            .video-iframe {
+                width: 100% !important;
+                height: 100% !important;
+            }
     
    #vids-ads-place {
     width: 100%;
