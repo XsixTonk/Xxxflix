@@ -321,26 +321,31 @@ main{
 
     #videos-place {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted grid layout for responsiveness */
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         width: 100%;
         height: auto;
-        padding: 0; /* Removed padding to eliminate extra space */
-        margin: 0; /* Removed margin to eliminate extra space */
-        grid-gap: 0; /* Removed grid gap */
+        padding: 0;
+        margin: 0;
+        grid-gap: 0;
+        justify-items: center; /* Center content horizontally */
     }
 
     /* Style for video container */
     .video-card {
-        width: 100%; /* Video card takes full width of its container */
-        height: auto; /* Height adjusts automatically based on content */
-        border: 1px solid black; /* Added border to the video card */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow to the video card */
+        width: calc(100% - 2px); /* Adjusted width to consider border */
+        height: auto;
+        border: 1px solid black;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex; /* Added to center iframe vertically */
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
     }
 
     .video-iframe {
-        width: 100%; /* Video iframe takes full width of its container */
-        height: 100%; /* Video iframe takes full height of its container */
+        max-width: 100%; /* Video iframe takes full width of its container */
+        max-height: 100%; /* Video iframe takes full height of its container */
     }
+    
    #vids-ads-place {
     width: 100%;
     height: auto;
