@@ -318,6 +318,7 @@ main{
                 #videos-sect {
     width: 100%;
     height: auto;
+    padding: 20px; /* Adjust padding as needed */
 }
 
 #videos-place {
@@ -329,7 +330,7 @@ main{
 .video-card {
     width: 100%;
     height: auto;
-    border: 1px solid #ccc; /* Adjust border color and thickness */
+    border: 1px solid #ccc; /* Border for video cards */
     border-radius: 8px; /* Rounded corners for video cards */
     overflow: hidden; /* Ensure content doesn't overflow */
     position: relative; /* Relative positioning for absolute button placement */
@@ -337,8 +338,9 @@ main{
 
 .video-iframe {
     width: 100%;
-    height: auto;
+    height: 100%; /* Ensure iframe fills the video card */
     display: block;
+    border: none; /* Remove iframe border */
 }
 
 .button {
@@ -365,32 +367,6 @@ main{
 
 .play-button i {
     margin-right: 5px; /* Adjust spacing between icon and text */
-}
-
-   #vids-ads-place {
-    width: 100%;
-    height: auto;
-}
-
-#vids-ads {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px; /* Add some gap between grid items for clarity */
-    padding: 5px;
-}
-
-.vid-ad {
-    width: 100%;
-    height: 250px; /* Set a fixed height for consistency */
-    border: 2px solid black; /* Add a border for visibility */
-    overflow: hidden; /* Ensure content within the div doesn't overflow */
-}
-
-.vid-ad iframe {
-    width: 100%;
-    height: 100%; /* Ensure the iframe fills the container */
-    border: none; /* Remove border from the iframe */
 }
 
     #Ads-place{width:100%;
