@@ -324,8 +324,8 @@ main{
 
 #videos-place {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-gap: 20px; /* Adjust gap between video cards */
+    grid-template-columns: repeat(1,1fr);
+    padding:50px;
 }
 
 .video-card {
@@ -344,6 +344,8 @@ main{
     width: 100%;
     height: 100%; /* Ensure iframe fills the video card */
     border: none; /* Remove iframe border */
+    padding:50px;
+    gap:10px;
 }
 
 #button {
