@@ -442,4 +442,18 @@ main{
     height: 100%; /* Ensure the iframe fills the container */
     border: none; /* Remove border from the iframe */
 }
+    #videos-of-companies{width:100%;
+                         height:auto;
+                        }
+    #logos{width:100%
+           height:auto;
+           display:grid;
+           grid-template-columns:repeat(2,1fr);
+}
+    .company-card img{width:220px;
+                      height:130px; 
+                      display:inline-block;
+
+}
+
 }
